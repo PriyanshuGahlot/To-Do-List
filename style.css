@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Lexend';
+    user-select: none;
 }
 .container{
     height: 100vh;
     display: grid;
-    background-image: linear-gradient(135deg,purple,pink);
+    background-image: linear-gradient(135deg,#60a7f8,#f02c67);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +19,9 @@
     justify-content: center;
     position: fixed;
     height: fit-content;
-    width: 400px;
-    background-color: white;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     top: 10%;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
@@ -30,6 +32,7 @@
     font-size: 32px;
 }
 input{
+    outline: 0;
     margin-top: 20px;
     padding: 10px;
     padding-left: 20px;
@@ -40,9 +43,9 @@ input{
 }
 ol{
     margin-top: 20px;
-    user-select: none;
 }
 li{
+    font-size: 16px;
     margin: 10px;
     position: relative;
     padding: 10px;
@@ -55,7 +58,7 @@ span{
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 0;
+    right: -25px;
     top: 0;
     height: 40px;
     width: 40px;
